@@ -88,8 +88,10 @@ namespace Il2CppInspector
                     value = Metadata.ReadBoolean();
                     break;
                 case Il2CppTypeEnum.IL2CPP_TYPE_U1:
-                case Il2CppTypeEnum.IL2CPP_TYPE_I1:
                     value = Metadata.ReadByte();
+                    break;
+                case Il2CppTypeEnum.IL2CPP_TYPE_I1:
+                    value = Metadata.ReadSByte();
                     break;
                 case Il2CppTypeEnum.IL2CPP_TYPE_CHAR:
                     // UTF-8 character assumed
